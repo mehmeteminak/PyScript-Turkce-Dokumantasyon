@@ -1,2 +1,2 @@
-# PyScript-T-rk-e-D-k-mantasyon
+# PyScript Türkçe Dökümantasyon
 PyScript hakkında hazırlanmış Türkçe dökümantasyon
