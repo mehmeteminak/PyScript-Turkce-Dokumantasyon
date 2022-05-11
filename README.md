@@ -2,6 +2,7 @@
 
 Başlamadan önce: kaynağa destek olabilir ve daha çok kişiye erişmesini sağlayabilirsiniz. 🎉⭐
 
+
 ## PyScript nedir?
 Anaconda'dan Peter Wang, Fabio Pliger ve Philipp Rudiger'in içerisinde bulunduğu  bir ekip tarafından geliştirilen PyScript, Peter'ın konuşmasında belirttiği gibi, Python'u PHP gibi HTML içerisinde yazabilmek için geliştirilen bir JavaScript framework'üdür.Bu, Python kodunu HTML dosyasının içerisinde yazıp çalıştırabileceğiniz anlamına gelir.Sizcede kulağa müthiş gelmiyor mu :)
 
@@ -23,7 +24,15 @@ Python'da web siteleri yazmayı mümkün kılan temel teknoloji WebAssembly'dir.
 
 
 ### PyScript nasıl kullanılır?
-PyScript'in alfa sürümüne [buraya](pyscript.net) tıklayarak ulaşabilirsiniz. Kodları https://github.com/pyscript adresinde mevcuttur. Denemek için bu talimatları izleyin. PyScript, aşağıdaki üç ana bileşeni kullanarak Python'u html'de yazmanıza izin verir:
+PyScript'in alfa sürümüne [buraya](pyscript.net) tıklayarak ulaşabilirsiniz. Kodları https://github.com/pyscript adresinde mevcuttur. 
+Denemek için bu talimatları izleyin. 
+
+Öncelikle HTML sayfamıza pyscript.js dosyasını ve pyscript.css dosyasını include etmemiz lazım aşağıdaki kodları HTML dosyamıza yapıştırarak include ederiz.
+
+`<link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />`                                                                                         `<script defer src="https://pyscript.net/alpha/pyscript.js"></script>`  
+
+
+PyScript, aşağıdaki üç ana bileşeni kullanarak Python'u html'de yazmanıza izin verir:
 
 
 
