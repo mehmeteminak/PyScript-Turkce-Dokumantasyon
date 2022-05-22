@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+        <h1>Frekans Tablosu</h1>
+        How many element are there in your dataset? <input id="size" type="text" width="40px"> <button
+            onclick="create()">Enter</button>
+        <br><br>
+        <p id="as"></p>
+    </center>
+    <script>
+        function create() {
+
+            var sayac = 0;
+            var size = document.querySelector("#size").value;
+            while (sayac != size) {
+                document.body.innerHTML += `<center>Lütfen ${sayac + 1}. elemanı girin: <input id="value${sayac}" type="text" width="3%"><br><br></center>`;
+                sayac++;
+            }
+            document.body.innerHTML += "<center><button onclick='verileriIsle()' id='dataSet'>Verileri Gönder</button><center>"
+        }
+        function verileriIsle(){
+            var arr=[];
+            for(let i=0;i<size;i++){
+                arr[i]=document.querySelector(`#value${i}`).value;
+            }
+            for(let i=0;i<size;i++){
+                document.querySelector("#as").innerHTML=a[i]+ "<br><br>";
+                
+            }
+            /*
+            var max=Math.max(...arr);
+            var min=Math.min(...arr);
+
+            var n = size;
+            var R = max - min;
+            document.body.innerHTML += min;
+            document.body.innerHTML += "<br>" + max;*/
+
+           
+        }
+
+        
+        function kontrolEt() {
+            var max = document.querySelector("#value0").value;
+            var min = document.querySelector("#value0").value;
+            for (let i = 0; i < size; i++) {
+
+                let temp = document.querySelector("#value" + i).value;
+                if (temp > max) {
+                    max = temp;
+                }
+                if (temp < min) {
+                    min = temp;
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
